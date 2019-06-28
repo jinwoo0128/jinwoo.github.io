@@ -283,6 +283,9 @@ footer ul li a:hover {color:gray;}
 .main2 .m2_wrap div div p {width:100%; }
 .main2 .a_box_b  { position: absolute; bottom:-30px; }
 .m3_wrap > div {padding:40% 15px 0; } 
+
+.m3_right {margin-bottom : 10px; } 
+
 .main4 .m4_wrap > div { float:none; padding:10px 15px;}
 .main4 .m4_wrap div .inner {position: static;}
 .main4 .m4_wrap .m4_right .inner {position: static;}
