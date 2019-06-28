@@ -185,7 +185,7 @@ position:absolute; top:20px; right:8px;}
 .main4 .m4_wrap { margin-left:-15px; width:calc(100% + 30px);}
 .main4 .m4_wrap > div {position:relative; float:left; width:50%; padding:14% 15px ; box-sizing:border-box;}
 .main4 .m4_wrap div .inner {top:0; bottom:0; right:15px; left:15px;}
-.main4 .m4_wrap .m4_right .inner {top:22%;}
+.main4 .m4_wrap .m4_right .inner {top:12%;}
 .main4 .m4_wrap div img {width:100%}
 .main4 .m4_wrap div h2	{width:100%; line-height:40px; font-size:34px; font-weight:500; margin-bottom:15px;}
 .main4 .m4_wrap div p {width:100%; font-size:25px;}
@@ -285,8 +285,13 @@ footer ul li a:hover {color:gray;}
 .m3_wrap > div {padding:40% 15px 0; } 
 .main4 .m4_wrap > div { float:none; padding:10px 15px;}
 .main4 .m4_wrap div .inner {position: static;}
-.main4 .m4_wrap .m4_right .inner {position: static; top:10%;}
+.main4 .m4_wrap .m4_right .inner {position: static;}
+.m4_right {margin:0 auto; width:100%;}
+.m4_right .inner {width:110%; padding-bottom:20px;}
+.m4_left {margin:0 auto;}
+.m4_left .inner {width:130%;}
 .main4 .m4_wrap div img {width:80%}
+
 }
 						/* 데스크 탑 1024이하 시작 끝 */
 
