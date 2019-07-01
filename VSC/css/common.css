@@ -180,8 +180,8 @@ nav .nav_wrap .right_nav ul li:last-child a img {margin-right:12px;}
 .m2 .inner a .m2_icon.Extens {background-position:-150px 0;}
 .m2 .inner a .m2_icon.Extens:hover {background-position:-150px -50px;}
 
-.m3 .tweet {float:left;   width:33.333333%; padding:0 15px; position: relative; box-sizing:border-box;}
-.m3 .tweet .tweet_body { float:left;  padding-left:90px;}
+.m3 .tweet {float:left;   width:33.333333%; padding:0 15px; box-sizing:border-box;}
+.m3 .tweet .tweet_body { float:left;  padding-left:90px; position: relative;}
 .m3 .tweet .tweet_body:after  {content:''; background:url('../images/twitter-icon.svg') no-repeat 0 0; position:absolute; top:0px; right:0; padding:10px;}
 .m3 .tweet .tweet_body .tweet_name {display:block;}
 .m3 .tweet .tweet_body .tweet_name a strong {font-size:14px; color:black;}
