@@ -101,7 +101,7 @@ position:absolute; top:20px; right:8px;}
 .main_nav ul > li.on .see_ar:after {border-top-color:black;}
 .main_nav .none_ar:hover {background-color:white; color:black}
 
-.main_nav .search_bar {float:right; position:relative; }
+.main_nav .search_bar {float:right; position:relative; z-index: 1000;}
 .main_nav .search_bar input { border:1px solid white; background-color:black;  width:233px; height:28px; margin:27px 40px 28px 0;  }
 .main_nav .search_bar svg {width:20px; height:20px; display:block;  }
 .search_bar path {fill: white}
