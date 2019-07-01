@@ -25,9 +25,7 @@ h1, h2, h3, h4, h5, h6, div, p, dl, dt, dd, ul, ol, li, form, fieldset, blockquo
 ul, ol {
 	list-style:none;
 }
-
 a {text-decoration:none; color:white;}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -36,8 +34,8 @@ table {
 /* common module */
 .wrap {transition:all 0.5s ease; max-width:100%; overflow: hidden;}
 .main_wrap {transition:all 0.5s ease;}
-.nav_wrap:after, .m1:after, .m1 .download:after, .m1 > div:after, .m2:after, .m3 .inner:after, .tweet_body:after, .m4_main:after, .m5_main:after, .m6_main:after, .m7_main:after,
-.foo:after, .m9_main:after, .foo ul:after {content:''; display:block; clear:both; }
+.nav_wrap:after, .m1:after, .m1 .download:after, .m1 > div:after, .m2:after, .m3 .inner:after, .tweet_body:after, .m4_main:after, .m5_main:after,
+.m6_main:after, .m7_main:after, .foo:after, .m9_main:after, .foo ul:after {content:''; display:block; clear:both; }
 
 .container {width:1170px; margin:0 auto;}
 .m3_wrap, .m5_wrap, .m7_wrap {background-color:#f5f5f5; padding:60px 0; }
@@ -101,10 +99,27 @@ nav .nav_wrap .right_nav ul li:last-child a img {margin-right:12px;}
 .m1 .left_m1 .inner .download .download_80 p {font-size:14px; font-weight:300;}
 .m1 .left_m1 .inner .download .download_20 {margin-left:2px; float:left; width:19%; box-sizing:border-box; }
 .m1 .left_m1 .inner .download .download_20 a { height:63px; background:#477a32 url('../images/donwload_arrow.svg') no-repeat 50%; background-size:16px;}
-.m1 .left_m1 .inner .m1_explain {display:inline-block; width:100%; box-sizing:border-box; padding:8px; margin:15px 0 0; padding:8px; background-color:#272354; border-radius:10px; position: relative; }
-.m1 .left_m1 .inner .m1_explain:after {content:''; display:inline-block; border-style:solid; border-width:7px; border-bottom-color: #272354;
-										border-top-color:transparent; border-left-color:transparent; border-right-color:transparent; 
-										position: absolute; bottom:100%; left:80%;}
+.m1 .left_m1 .inner .m1_explain {
+	display:inline-block; 
+	width:100%; 
+	box-sizing:border-box; 
+	padding:8px;
+	margin:15px 0 0;
+	background-color:#272354;
+	border-radius:10px;
+	position:relative;
+}
+.m1 .left_m1 .inner .m1_explain:after {
+	content:''; 
+	display:inline-block;
+	border-style:solid;
+	border-width:7px;
+	border-bottom-color: #272354;
+	border-top-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent; 
+	position: absolute; bottom:100%; left:80%;
+}
 .m1 .left_m1 .inner .m1_extra { margin:10px 0 15px; padding:4px 8px;}
 .m1 .left_m1 .inner div p a {color:#b5a0ff}
 .m1 .left_m1 .inner div p {color:rgba(255,255,255,0.6); font-size:12px;}
@@ -116,9 +131,8 @@ nav .nav_wrap .right_nav ul li:last-child a img {margin-right:12px;}
 	line-height:20px; 
 	border:2px solid #477a32;
 	position: absolute; top:63px; z-index:99;}
-.m1_down_table.on {
-	display:block;
-}
+.m1_down_table.on {	display:block;}
+
 .m1_down_table a {color:#0072be;}
 .m1_down_table img {width:16px; height:16px}
 .m1_down_table .bottom_line {border-bottom:1px solid rgba(55,52,117,0.25)}
@@ -166,9 +180,9 @@ nav .nav_wrap .right_nav ul li:last-child a img {margin-right:12px;}
 .m2 .inner a .m2_icon.Extens {background-position:-150px 0;}
 .m2 .inner a .m2_icon.Extens:hover {background-position:-150px -50px;}
 
-.m3 .tweet {float:left;   width:33.333333%; padding:0 15px; box-sizing:border-box;}
-.m3 .tweet .tweet_body { float:left; position: relative; padding-left:90px; }
-.m3 .tweet .tweet_body:after  {content:''; background:url('../images/twitter-icon.svg') no-repeat 0 0; position: absolute; top:0; right:0; padding:10px; }
+.m3 .tweet {float:left;   width:33.333333%; padding:0 15px; position: relative; box-sizing:border-box;}
+.m3 .tweet .tweet_body { float:left;  padding-left:90px;}
+.m3 .tweet .tweet_body:after  {content:''; background:url('../images/twitter-icon.svg') no-repeat 0 0; position:absolute; top:0px; right:0; padding:10px;}
 .m3 .tweet .tweet_body .tweet_name {display:block;}
 .m3 .tweet .tweet_body .tweet_name a strong {font-size:14px; color:black;}
 .m3 .tweet .tweet_body .tweet_name a strong:hover {color:#0072be}
@@ -275,11 +289,42 @@ table .down_file {width:45px;}
 .foo_left {float:left; width:652px; padding:0 15px; box-sizing: border-box;}
 .foo_left ul li {float:left; padding:0 20px 0 0; }
 .foo_left .cat {padding:0;}
-.foo_left .cat a {padding:2px 5px 2px 4px; border:1px solid white; border-radius:3px; display:block; color:black; background-color:white; font-size:11px; font-weight: 700;  }
-.foo_left .cat a span {display:inline-block; background:url('../images/cat-logo.svg') no-repeat center center / cover; width:10px; height:10px; margin-right:4px;}
+.foo_left .cat a {padding:2px 5px 2px 4px;
+	border:1px solid white;
+	border-radius:3px;
+	display:block;
+	color:black;
+	background-color:white;
+	font-size:11px;
+	font-weight:700;
+}
+.foo_left .cat a span {display:inline-block;
+	background:url('../images/cat-logo.svg') no-repeat center center / cover;
+	width:10px;
+	height:10px;
+	margin-right:4px;}
 .foo_left .number {margin-left:4px; padding:0;} 
-.foo_left .number a {padding:2px 5px 2px 4px;  position:relative; border:1px solid white; border-radius:3px; display:block; color:black; background-color:white; font-size:11px; font-weight: 700;}
-.foo_left .number a:before {position:absolute; top:30%; left:-7px; content:''; border-width:3px; border-style:solid; border-right-color:white; border-left-color:transparent; border-top-color:transparent; border-bottom-color:transparent; }
+.foo_left .number a {padding:2px 5px 2px 4px;
+	 position:relative;
+	 border:1px solid white;
+	 border-radius:3px;
+	 display:block;
+	 color:black;
+	 background-color:white;
+	 font-size:11px;
+	 font-weight: 700;
+	}
+.foo_left .number a:before {
+	position:absolute;
+	top:30%; left:-7px; 
+	content:'';
+	border-width:3px;
+	border-style:solid;
+	border-right-color:white;
+	border-left-color:transparent;
+	border-top-color:transparent;
+	border-bottom-color:transparent;
+}
 .foo_right {float:right; text-align:right; width:487px; padding:0 15px; box-sizing: border-box; font-size:12px;}
 .foo_right ul { display: inline-block; margin-bottom: 15px;}
 .foo_right ul li {float:left; padding:0 20px 0 0; }
@@ -373,28 +418,19 @@ table .down_file {width:45px;}
 	.m10 .m10_text_bottom h3 { font-size:10.8px; }
 	.m10 .m10_text_bottom p { font-size:12.6px; }
 
-	
-
-
-.foo_left {float:none; }
-.foo_right {float:none; text-align:left; width:auto; padding:0px; margin-top:40px}
-.foo_right ul { display: inline-block; margin:0 0 0 15px;}
-.foo_right .copy_right { display:inline-block;}
-
-
-
-
+	.foo_left {float:none; }
+	.foo_right {float:none; text-align:left; width:auto; padding:0px; margin-top:40px}
+	.foo_right ul { display: inline-block; margin:0 0 0 15px;}
+	.foo_right .copy_right { display:inline-block;}
 }
 /* 991 해상도 이하 끝 */
 /* 935 해상도 이하 끝 */
 @media screen and (max-width:935px) {
-
 	.m9_main {width:100%; margin:0px; text-align: center;}
 	.m9_main .inner {padding:0 25px; float:none; display: inline-block; vertical-align:top;}
 	.m9_main .in_window {width:49%}
 	.m9_main .in_linux {width:50%;}
 	.m9_main .in_apple {width:50%;}
-
 }
 /* 935 해상도 이하 끝 */
 /*  767 해상도 이하*/
@@ -405,10 +441,15 @@ nav .nav_wrap {width:100%; height:100%; z-index:99;}
 .nav_menu a {display:block; }
 .nav_menu img {display:block; width:25px; height:25px;}
 .nav_menu_inner li {padding:10px 12px; }
-.main_wrap.turn {transform:translateY(240px); z-index:100;}
+.main_wrap.turn {
+	transform:translateY(240px);
+	z-index:100;
+}
 .wrap .nav_menu_inner.turn {
 	display:block;
-	transform:translateY(100%) translateY(50px); z-index:100;}
+	transform:translateY(100%) translateY(50px);
+	z-index:100;
+}
 .banner { font-size:13.6px;}
 .m1 .left_m1 .inner h1 {font-size:42.5px;}
 .m1 .left_m1 .inner h3 {font-size:15.3px;}
@@ -416,33 +457,33 @@ nav .nav_wrap {width:100%; height:100%; z-index:99;}
 .m1 .left_m1 .inner .download .download_80 a {font-size:15.3px;}
 .m1 .left_m1 .inner .download .download_80 p {font-size:10.2px;}
 
-.m2 {padding:0px; width:100%; margin:0 auto; }
+.m2 {padding:0px; width:100%; margin:0 auto;}
 .m2 > .inner {float:left;  box-sizing:border-box; width:50%; padding:0 15px;}
 .m2 .inner div a { color:black; display:block; margin:0 auto;}
 .m2 .inner > div { width:100%}
 
 .m3 .tweet .tweet_body { min-height:100%; width:70%}
 
-.m4_main .m4_left, .m6_left {float:none; width:100%; }
+.m4_main .m4_left, .m6_left {float:none; width:100%;}
 .m4_main .m4_right, .m6_right {float:none; width:100%;}
-.m5_main .m5_left, .m7_left {float:none; width:100%; }
-.m5_main .m5_right, .m7_right {float:none; width:100%; }
+.m5_main .m5_left, .m7_left {float:none; width:100%;}
+.m5_main .m5_right, .m7_right {float:none; width:100%;}
 .m4_main .m4_right .inner h3, .m6_right .inner h3 {font-size:18.7px;}
 .m4_main .m4_right .inner p, .m6_right .inner p {font-size:15.3px;}
 .m5_main .m5_left .inner h3, .m7_left .inner h3 {font-size:18.7px;}
 .m5_main .m5_left .inner p, .m7_left .inner p {font-size:15.3px; }
 
-.m8_main .m8_left {float:none; width:100%; }
-.m8_main .m8_right {float:none; width:100%; text-align:center; }
+.m8_main .m8_left {float:none; width:100%;}
+.m8_main .m8_right {float:none; width:100%; text-align:center;}
 .m8_main .m8_left h2 {font-size:18.7px; text-align:center;}
 .m8_main .m8_right .inner ul li {font-size:25.5px;}
 
 .m9_main .inner div a small {font-size:10px;}
 
-.m10 .m10_text_top h2 { font-size:17.85px; }
-.m10 .m10_text_top p { font-size:15.3px; }
-.m10 .m10_text_bottom h3 { font-size:10.2px; }
-.m10 .m10_text_bottom p { font-size:11.9px; }
+.m10 .m10_text_top h2 { font-size:17.85px;}
+.m10 .m10_text_top p { font-size:15.3px;}
+.m10 .m10_text_bottom h3 { font-size:10.2px;}
+.m10 .m10_text_bottom p { font-size:11.9px;}
 }
 /* 767 해상도 이하 끝 */
 /* 641 해상도 이하 끝 */
@@ -456,20 +497,17 @@ nav .nav_wrap {width:100%; height:100%; z-index:99;}
 /* 529 해상도 이하 끝 */
 @media screen and (max-width:529px) {
 	.foo_left > ul > li:first-child {display:none}
+	.foo_right .copy_right {margin:15px;}
 }
 /* 529 해상도 이하 끝 */
-/* 420이하 */
+/* 480이하 */
 @media screen and (max-width:480px) {
-	.m3 .tweet .tweet_body {
-		min-height: 100%;
-		width: 50%;
-	}
+	.m3 .tweet .tweet_body {min-height: 100%;width: 50%;}
 	.m1 .left_m1 .inner .m1_down_box {width:100%;}
 }
-/* 420이하 끝*/
+/* 480이하 끝*/
 /* 278이하 */
 @media screen and (max-width:480px) {
-	/* .nav_menu {position: absolute; top:-5px; right:20px; border: 1px solid red;} */
 	nav .nav_wrap { width:auto;}
 }
 /* 278이하 끝*/
